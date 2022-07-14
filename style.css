@@ -1,0 +1,145 @@
+html {
+	font-size: 62.5%;
+	font-family: 'Montserrat', sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	min-height: 100vh;
+	width: 100%;
+	background-color: hsl(30, 38%, 92%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card {
+	width: 23rem;
+	color: hsl(228, 12%, 48%);
+}
+
+.card-img {
+	width: 100%;
+	border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.card-img.desktop {
+	display: none;
+}
+
+.card-details {
+	padding: 1.5rem;
+	background-color: white;
+	border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.card-heading {
+	font-family: 'Fraunces', serif;
+	font-size: 2.2rem;
+	color: hsl(212, 21%, 14%);
+	line-height: 2.1rem;
+	margin: 1rem 0 1.2rem;
+}
+
+.card-subheading {
+	text-transform: uppercase;
+	letter-spacing: 0.5rem;
+	font-size: 0.7rem;
+}
+
+.card-desc {
+	font-size: 0.85rem;
+	line-height: 1.5rem;
+	/* letter-spacing: 0.07rem; */
+	margin-bottom: 3rem;
+}
+
+.price {
+	display: flex;
+	align-items: center;
+	height: fit-content;
+}
+
+.price-new {
+	font-size: 2.2rem;
+	font-family: 'Fraunces', serif;
+	font-weight: 700;
+	color: hsl(158, 36%, 37%);
+}
+
+.price-old {
+	margin-left: 2.5rem;
+	text-decoration: line-through;
+	font-size: 0.8rem;
+}
+
+.card-btn {
+	background-color: hsl(158, 36%, 37%);
+	color: white;
+	font-weight: 700;
+	font-size: 0.9rem;
+	border: none;
+	border-radius: 0.5rem;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem 5rem;
+	margin-top: 1rem;
+	cursor: pointer;
+}
+
+.card-btn:hover {
+	background-color: hsl(158, 36%, 20%);
+}
+
+.card-btn span {
+	margin-left: 1rem;
+}
+
+@media screen and (min-width: 1440px) {
+	.card {
+		display: flex;
+		width: 40rem;
+	}
+
+	.card-img {
+		width: 50%;
+	}
+
+	.card-img.mobile {
+		display: none;
+	}
+
+	.card-img.desktop {
+		display: block;
+	}
+
+	.card-details {
+		padding: 2rem;
+	}
+
+	.card-heading {
+		margin-top: 1.5rem;
+		font-size: 2rem;
+	}
+
+	.card-subheading {
+		font-size: 0.8rem;
+		letter-spacing: 0.35rem;
+	}
+
+	.card-desc {
+		font-size: 1rem;
+		margin-bottom: 1.9rem;
+	}
+
+	.price-old {
+		margin-left: 1rem;
+	}
+}
